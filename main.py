@@ -128,7 +128,7 @@ def addition(message):
     elif operation == ['/Деление']:
         a = int(get_msg_bot[0])
         b = int(get_msg_bot[1])
-        result = pows.pows(a, b)
+        result = div.div(a, b)
         send_msg = f'{a} / {b} = {result}'
         bot.send_message(message.chat.id, send_msg)
         logging.info(f'{message.from_user.first_name}/ {message.from_user.id}/ result = {result}')
